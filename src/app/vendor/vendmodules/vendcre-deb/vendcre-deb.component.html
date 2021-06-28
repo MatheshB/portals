@@ -1,0 +1,110 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                    <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px;" >CREDIT</h1>
+                    <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(Finance)</h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="styled-table">
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 20px; ">
+                                <th>KUNNR</th>
+                                <th>BUKRS</th>
+                                <th>BELNR</th>
+                                <th>GJAHR</th>
+                                <th>AUGDT</th>
+                                <th>MENGE</th>
+                                <th>BUZEI</th>
+                                <th>KOART</th>
+                                <th>DMBTR</th>
+                                <th>BDIFF</th>
+                                <th>XBILK</th>
+
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of head | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="KUNNR">{{iter.KUNNR._text}}</td>
+                                <td data-label="BUKRS">{{iter.BUKRS._text}}</td>
+                                <td data-label="BELNR">{{iter.BELNR._text}}</td>
+                                <td data-label="GJAHR">{{iter.GJAHR._text}}</td>
+                                <td data-label="AUGDT">{{iter.AUGDT._text}}</td>
+                                <td data-label="MENGE">{{iter.MENGE._text}}</td>
+                                <td data-label="BUZEI">{{iter.BUZEI._text}}</td>
+                                <td data-label="KOART">{{iter.KOART._text}}</td>
+                                <td data-label="DMBTR">{{iter.DMBTR._text}}</td>
+                                <td data-label="BDIFF">{{iter.BDIFF._text}}</td>
+                                <td data-label="XBILK">{{iter.XBILK._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<br>
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"> DEBIT </h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;"> Finance </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="styled-table">
+                            <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 20px; ">
+                              <th>KUNNR</th>
+                              <th>BUKRS</th>
+                              <th>BELNR</th>
+                              <th>GJAHR</th>
+                              <th>AUGDT</th>
+                              <th>MENGE</th>
+                              <th>BUZEI</th>
+                              <th>KOART</th>
+                              <th>DMBTR</th>
+                              <th>BDIFF</th>
+                              <th>XBILK</th>
+
+                            </thead>
+                            <tbody>
+                              <tr *ngFor = "let iter of values | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <td data-label="KUNNR">{{iter.KUNNR._text}}</td>
+                                <td data-label="BUKRS">{{iter.BUKRS._text}}</td>
+                                <td data-label="BELNR">{{iter.BELNR._text}}</td>
+                                <td data-label="GJAHR">{{iter.GJAHR._text}}</td>
+                                <td data-label="AUGDT">{{iter.AUGDT._text}}</td>
+                                <td data-label="MENGE">{{iter.MENGE._text}}</td>
+                                <td data-label="BUZEI">{{iter.BUZEI._text}}</td>
+                                <td data-label="KOART">{{iter.KOART._text}}</td>
+                                <td data-label="DMBTR">{{iter.DMBTR._text}}</td>
+                                <td data-label="BDIFF">{{iter.BDIFF._text}}</td>
+                                <td data-label="XBILK">{{iter.XBILK._text}}</td>
+                              </tr>
+                              </tbody>
+                        </table>
+                        <div class="paginate text-center">
+                          <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+

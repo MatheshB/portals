@@ -1,0 +1,94 @@
+<!-- <img class="wave" src="/assets/wave.png" >
+	<div class="container">
+		<div class="img">
+			<img src="/assets/bg.png">
+		</div>
+		<div class="login-content">
+			<form id="login" action="none" #f = "ngForm" (ngSubmit)="log(f)">
+				<img src="/assets/avatar.png">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input name="username" #username = "ngModel" ngModel type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input name="password" #password = "ngModel" ngModel type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div> -->
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<div class="content ">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/login-1.png" alt="Image" class="img-fluid">
+      </div>
+      <div class="col-md-6 contents">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="mb-4">
+            <h1 style="margin-left: 25%;"><b>Sign In</b></h1>
+            <p class="mb-4" style="margin-left: 10%;">Welcome to the customer portal!</p>
+          </div>
+          <form  action="none" #f = "ngForm" (ngSubmit)="log(f)">
+            <div class="form-group first">
+              <label for="username">Username</label>
+              <input name="username" #username = "ngModel" ngModel type="text" class="input" class="form-control" id="username">
+
+            </div>
+            <div class="form-group last mb-4">
+              <label for="password">Password</label>
+              <input name="password" #password = "ngModel" ngModel type="password" class="input" class="form-control" id="password">
+
+            </div>
+
+            <div class="d-flex mb-5 align-items-center">
+              <label class="lni lni-checkbox-filled mb-0"><span class="caption">Remember me</span>
+                <!-- <input type="checkbox" checked="checked"/> -->
+                <div class="control__indicator"></div>
+              </label>
+              <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+            </div>
+
+            <input type="submit" value="Login" class="btn btn-block btn-primary">
+
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/landingpg" class="btn btn-block btn-primary"><b>Back to home</b></a>
+            <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
+
+            <div class="social-login">
+              <a href="#" class="facebook">
+                <span class="lni lni-facebook-filled mr-3"></span>
+              </a>
+              <a href="#" class="twitter">
+                <span class="lni lni-twitter-filled mr-3"></span>
+              </a>
+              <a href="#" class="google">
+                <span class="lni lni-instagram-filled mr-3"></span>
+              </a>
+            </div>
+          </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; " >Payslip details</h1>
+                      <h4  class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;"> Employee's payslip details </h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="styled-table" style="margin-left: 20%;">
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 14px; ">
+                                <th>SEQUENCENUMBER</th>
+                                <th>FPPERIOD</th>
+                                <th>FPBEGIN</th>
+                                <th>FPEND</th>
+                                <th>BONUSDATE</th>
+                                <th>PAYDATE</th>
+                                <th>PAYTYPE_TEXT</th>
+
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of display | paginate: { itemsPerPage: 8, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="SEQUENCENUMBER">{{iter.SEQUENCENUMBER._text}}</td>
+                                <td data-label="FPPERIOD">{{iter.FPPERIOD._text}}</td>
+                                <td data-label="FPBEGIN">{{iter.FPBEGIN._text}}</td>
+                                <td data-label="FPEND">{{iter.FPEND._text}}</td>
+                                <td data-label="BONUSDATE">{{iter.BONUSDATE._text}}</td>
+                                <td data-label="PAYDATE">{{iter.PAYDATE._text}}</td>
+                                <td data-label="PAYTYPE_TEXT">{{iter.PAYTYPE_TEXT._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+

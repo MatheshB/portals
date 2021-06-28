@@ -1,0 +1,78 @@
+<!-- <img class="wave" src="/assets/wave.png" >
+	<div class="container">
+		<div class="img">
+			<img src="/assets/bg.png">
+		</div>
+		<div class="login-content">
+			<form id="login" action="none" #f = "ngForm" (ngSubmit)="log(f)">
+				<img src="/assets/avatar.png">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input name="username" #username = "ngModel" ngModel type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input name="password" #password = "ngModel" ngModel type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div> -->
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="bg-img">
+  <div class="content ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6" style="margin-top: 10%;">
+          <img src="assets/payrep.png" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents" style="margin-top: 10%;">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h1 style="margin-left: 25%;"><b>Playslip report</b></h1>
+              <p class="mb-4" style="margin-left: 23%;">Enter your sequence no</p>
+            </div>
+            <form  action="none" #f = "ngForm" (ngSubmit)="showitems(f)">
+              <div class="form-group first">
+                <label for="username">Username</label>
+                <input style="background-color:#fddaa2;" name="username" #username = "ngModel" ngModel type="text" class="input" class="form-control" id="username">
+
+              </div>
+              <div class="form-group last mb-4">
+                <label for="password">Sequence no</label>
+                <input style="background-color:#fddaa2;" name="password" #password = "ngModel" ngModel type="password" class="input" class="form-control" id="password">
+
+              </div>
+
+
+
+              <input type="submit" value="preview" class="btn btn-block " style="background-color:#F9A826 ;">
+
+
+            </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+

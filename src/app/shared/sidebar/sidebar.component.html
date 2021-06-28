@@ -1,0 +1,102 @@
+<mat-nav-list >
+  <div class="profile-card">
+      <div class="header">
+          <!--h2>Soufiane FADIL</h2>
+          <h4>example@email.com</h4-->
+      </div>
+      <img class="image" src="/assets/avatar.png" alt="Soufiane FADIL">
+  </div>
+  <mat-divider></mat-divider>
+  <div style="background-color:#6262e6;">
+    <mat-accordion >
+      <mat-expansion-panel style="color: white;">
+        <mat-expansion-panel-header style="background-color: #6262e6;">
+        <mat-panel-title >
+          <h1 style="color: white; font-family: Times New Roman, serif;  " ><mat-icon>contacts</mat-icon>Profile</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard"><mat-icon>dashboard</mat-icon>Dashboard</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/profile"><mat-icon>account_box</mat-icon>My Profile</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/updprofile"><mat-icon>update</mat-icon>Update Profile</a>
+       </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </div>
+  <mat-divider></mat-divider>
+  <br>
+
+
+
+  <div >
+    <mat-accordion >
+      <mat-expansion-panel  >
+        <mat-expansion-panel-header style="background-color: #6262e6;">
+        <mat-panel-title >
+          <h1 style=" color: white; font-family: Times New Roman, serif;" > <mat-icon>assessment</mat-icon>Sales and Distribution</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/salesorder"><mat-icon>assessment</mat-icon>Sales order</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/deliverylist"><mat-icon>flight_takeoff</mat-icon>delivery list</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/inquiry"><mat-icon>query_builder</mat-icon>Inquiry</a>
+       </mat-expansion-panel>
+
+    </mat-accordion>
+  </div>
+  <mat-divider></mat-divider>
+  <br>
+  <div style="background-color: #6262e6;">
+    <mat-accordion >
+      <mat-expansion-panel  >
+        <mat-expansion-panel-header style="background-color: #6262e6;">
+        <mat-panel-title >
+          <h1 style=" color: white; font-family: Times New Roman, serif;" ><mat-icon> monetization_on</mat-icon>Finance</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/payment"><mat-icon> monetization_on</mat-icon>Payment</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/credit-debit"><mat-icon>credit_card</mat-icon>Credit and debit</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/financeord"><mat-icon>video_library</mat-icon>Invoice</a>
+       </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </div>
+  <mat-divider></mat-divider>
+  <br>
+  <div style="background-color: #6262e6;">
+    <mat-accordion >
+      <mat-expansion-panel  >
+        <mat-expansion-panel-header style="background-color: #6262e6;">
+        <mat-panel-title >
+          <h1 style=" color: white; font-family: Times New Roman, serif;" > <mat-icon> insert_link</mat-icon>Masterdata</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/masterdata"><mat-icon> insert_link</mat-icon>Masterdata Upload</a>
+
+         <a mat-list-item routerLinkActive="list-item-active" routerLink="/overallsales"><mat-icon> score</mat-icon>Overallsales</a>
+       </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </div>
+
+
+  <mat-divider></mat-divider>
+  <br>
+  <h2 matSubheader>Tools</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+      <mat-icon>import_contacts</mat-icon>
+      Contacts
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+      <mat-icon>contact_phone</mat-icon>
+      Leads
+  </a>
+
+</mat-nav-list>

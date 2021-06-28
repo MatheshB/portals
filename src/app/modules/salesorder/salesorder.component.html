@@ -1,0 +1,64 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center " >
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; " >Sales order </h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;"> (sales and distribution)</h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="styled-table" >
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 12px; " >
+                                <th>SD_DOC</th>
+                                <th>ITM_NUMBER</th>
+                                <th>DOC_TYPE</th>
+                                <th>DOC_DATE</th>
+                                <th>REQ_DATE</th>
+                                <th>VALID_FROM</th>
+                                <th>VALID_TO</th>
+                                <th>SOLD_TO</th>
+                                <th>NAME</th>
+                                <th>EXCHG_RATE</th>
+                                <th>DIVISION</th>
+                                <th>DOC_STATUS</th>
+                                <th>SALES_ORG</th>
+                                <th>CURR_ISO</th>
+                                <th>CREATION_DATE</th>
+                                <th>CREATION_TIME</th>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of display | paginate: { itemsPerPage: 8, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="SD_DOC">{{iter.SD_DOC._text}}</td>
+                                <td data-label="ITM_NUMBER">{{iter.ITM_NUMBER._text}}</td>
+                                <td data-label="DOC_TYPE">{{iter.DOC_TYPE._text}}</td>
+                                <td data-label="DOC_DATE">{{iter.DOC_DATE._text}}</td>
+                                <td data-label="REQ_DATE">{{iter.REQ_DATE._text}}</td>
+                                <td data-label="VALID_FROM">{{iter.VALID_FROM._text}}</td>
+                                <td data-label="VALID_TO">{{iter.VALID_TO._text}}</td>
+                                <td data-label="SOLD_TO">{{iter.SOLD_TO._text}}</td>
+                                <td data-label="NAME">{{iter.NAME.text}}</td>
+                                <td data-label="EXCHG_RATE">{{iter.EXCHG_RATE._text}}</td>
+                                <td data-label="DIVISION">{{iter.DIVISION._text}}</td>
+                                <td data-label="DOC_STATUS">{{iter.DOC_STATUS._text}}</td>
+                                <td data-label="SALES_ORG">{{iter.SALES_ORG._text}}</td>
+                                <td data-label="CURR_ISO">{{iter.CURR_ISO._text}}</td>
+                                <td data-label="CREATION_DATE">{{iter.CREATION_DATE._text}}</td>
+                                <td data-label="CREATION_TIME">{{iter.CREATION_TIME._text}}</td>
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+

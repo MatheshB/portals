@@ -1,0 +1,12 @@
+<app-empheader (toggleSideBarForMe)="sideBarToggler()"></app-empheader>
+
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-empsidebar></app-empsidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+

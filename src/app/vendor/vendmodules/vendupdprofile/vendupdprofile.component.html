@@ -1,0 +1,79 @@
+
+<div class="bg-img">
+  <div class="content" >
+    <div style="margin-bottom: 5%;">
+      <div class="row">
+        <div class="col-md-5" style="margin-top: 10%;">
+          <img src="assets/vendupd.png" alt="profile" class="img-fluid"/>
+        </div>
+
+        <div class="col-md-7" style="margin-top: 10%;">
+          <div class = "detail_container">
+            <form id="profile" action="none" #g="ngForm" (ngSubmit)="test2(g)">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">First Name</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="Name1" #first_name = "ngModel" value="{{fname}}" [(ngModel)] = "fname" class="form-control"  type="text" >
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">Last Name</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="Name2" #last_name = "ngModel" value="{{lname}}" [(ngModel)] = "lname" class="form-control"  type="text" >
+                    </div>
+                </div>
+                    <br>
+                    <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">Street</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="Street" #street_name="ngModel" value="{{street}}" [(ngModel)] = "street" class="form-control"  type="text" >
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">City</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="City" #city_name="ngModel" value="{{city}}" [(ngModel)] = "city" class="form-control"  type="text" >
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">District</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="District" #district_name="ngModel" value="{{district}}" [(ngModel)] = "district" class="form-control"  type="text" >
+
+                    </div>
+                </div>
+                    <br>
+                    <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">Phone number</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="Phone_number" #phonenumber_name="ngModel" value="{{phno}}" [(ngModel)] = "phno" class="form-control"  type="text" >
+                    </div>
+                </div>
+                    <br>
+                    <br>
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">Country</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="Country" #country_name="ngModel" value="{{country}}" [(ngModel)] = "country" class="form-control"  type="text" >
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  ">Pin Code</h4>
+                        <input style="background-color: rgb(164, 243, 217);" name="Pcode" #pincode_name="ngModel" value="{{pcode}}" [(ngModel)] = "pcode" class="form-control"  type="text" >
+                    </div>
+                </div>
+                <br>
+
+                <input type="submit" class="btn btn-block" style="background-color:#00BFA6 ;" value="UPDATE">
+                <br>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <div class="section-title text-center mb-40">
+      <img style=" width: 50%; height: auto;" src="assets/sap.jpg" alt="Image" class="img-fluid">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<!-- <p>{{CUSTOMER_NO}}</p>
+<p>{{NAME_1}}</p>
+<p>{{NAME_2}}</p>
+<p>{{CITY}}</p>
+<p>{{DISTRICT}}</p>
+<p>{{STATE}}</p>
+<p>{{COUNTRY}}</p>
+<p>{{POST_CODE}}</p>
+<p>{{MOBILE_NO}}</p> -->
+
+<div class="bg-img">
+  <div class="content"  >
+
+      <div class="row" >
+        <div class="col-md-5" style="margin-top: 10%;">
+          <img src="assets/emppro.png" alt="profile" class="img-fluid">
+        </div>
+
+        <div class="col-md-6" style="margin-top: 12%;">
+          <div class = "detail_container">
+            <form id="profile" action="none">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;" >First Name</h4>
+                        <input style="background-color:#fddaa2;" name="Name1" #first_name = "ngModel" value="{{NAME_1}}" [(ngModel)] = "NAME_1" class="form-control"  type="text" >
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Last Name</h4>
+                        <input style="background-color:#fddaa2;" name="Name2" #last_name = "ngModel" value="{{NAME_2}}" [(ngModel)] = "NAME_2" class="form-control"  type="text" >
+                    </div>
+                </div>
+                    <br>
+                    <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Street</h4>
+                        <input style="background-color:#fddaa2;" name="Street" #street_name="ngModel" value="{{ADDRESS}}" [(ngModel)] = "ADDRESS" class="form-control"  type="text" >
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">City</h4>
+                        <input style="background-color:#fddaa2;" name="City" #city_name="ngModel" value="{{CITY}}" [(ngModel)] = "CITY" class="form-control"  type="text" >
+
+                    </div>
+
+                </div>
+                    <br>
+                    <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Phone number</h4>
+                        <input style="background-color:#fddaa2;" name="Phone_number" #phonenumber_name="ngModel" value="{TELEPHONE}}" [(ngModel)] = "TELEPHONE" class="form-control"  type="text" >
+                    </div>
+                    <div class="col-lg-4">
+                      <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Date-of-Birth</h4>
+                      <input style="background-color:#fddaa2;" name="District" #district_name="ngModel" value="{{DISTRICT}}" [(ngModel)] = "DISTRICT" class="form-control"  type="text" >
+
+                  </div>
+                </div>
+                    <br>
+                    <br>
+                <div class="row">
+                    <!-- <div class="col-lg-4">
+                        <h4>State</h4>
+                        <input  name="State" #state_name="ngModel" value="{{STATE}}" [(ngModel)] = "STATE" class="form-control"  type="text" >
+                    </div> -->
+                    <div class="col-lg-4">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Country</h4>
+                        <input style="background-color:#fddaa2;" name="Country" #country_name="ngModel" value="{{COUNTRY}}" [(ngModel)] = "COUNTRY" class="form-control"  type="text" >
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Pin Code</h4>
+                        <input style="background-color:#fddaa2;" name="Pcode" #pincode_name="ngModel" value="{{POSTL_CODE}}" [(ngModel)] = "POSTL_CODE" class="form-control"  type="text" >
+                    </div>
+                </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-title text-center mb-40">
+        <img style=" width: 50%; height: auto;" src="assets/sap.jpg" alt="Image" class="img-fluid">
+      </div>
+    </div>
+
+
+</div>
+
+

@@ -1,0 +1,50 @@
+
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                    <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; " >Leave Details </h1>
+                    <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;"> Employee's leave details </h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive" >
+                          <table class="styled-table" style="margin-left: 25%;">
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 14px; ">
+                                <th>Employee_No</th>
+                                <th>Leave type</th>
+                                <th>Name of the type</th>
+                                <th>Starting date</th>
+                                <th>End date</th>
+                                <th>Total days</th>
+                                <th>Total hours</th>
+
+                              </thead>
+                              <tbody>
+
+                                <tr *ngFor = "let iter of display | paginate: { itemsPerPage: 8, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="EMPLOYEE_NO">{{iter.EMPLOYEENO._text}}</td>
+                                <td data-label="Leave type">{{iter.ABSENCETYPE._text}}</td>
+                                <td data-label="Name of the type">{{iter.NAMEOFABSENCETYPE._text}}</td>
+                                <td data-label="Starting date">{{iter.VALIDBEGIN._text}}</td>
+                                <td data-label="End date">{{iter.VALIDEND._text}}</td>
+                                <td data-label="Total days">{{iter.ABSENCEDAYS._text}}</td>
+                                <td data-label="Total hours">{{iter.ABSENCEHOURS._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate" style="margin-left: 45%;">
+                              <pagination-controls (pageChange)="p = $event"> </pagination-controls>
+                            </div>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.bg-img{
+  min-height: 100vh;
+ width: 100%;
+ background: url('/assets/white.jpg') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ }

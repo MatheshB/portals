@@ -1,0 +1,56 @@
+<div class="bg-img">
+  <div class="content ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/leave.png" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents" style="border:#F9A826 ;">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h1 style="margin-left: 25%;"><b>Leave form</b></h1>
+              <p class="mb-4" style="margin-left: 18%;">Enter your leave details</p>
+            </div>
+            <form  action="none" #f = "ngForm" (ngSubmit)="log(f)">
+              <div class="form-group first">
+                <label for="start">Start-date</label>
+                <input name="start" #start = "ngModel" ngModel type="text" class="input" class="form-control" id="username">
+
+              </div>
+              <div class="form-group last mb-4">
+                <label for="end">End-date</label>
+                <input name="end" #end = "ngModel" ngModel type="text" class="input" class="form-control" id="password">
+
+              </div>
+              <div class="form-group first">
+                <label for="username">Employee No</label>
+                <input name="username" #username = "ngModel" ngModel type="text" class="input" class="form-control" id="username">
+
+              </div>
+
+              <div class="form-group last mb-4">
+                <label for="type">Leave type</label>
+                <input name="type" #type = "ngModel" ngModel type="text" class="input" class="form-control" id="password">
+
+              </div>
+
+
+
+              <input type="submit" value="Submit" class="btn btn-block " style="background-color:#F9A826 ;color: black;">
+
+              <a mat-list-item routerLinkActive="list-item-active" routerLink="/empleave-det" class="btn btn-block " style="background-color:#F9A826 ;color: black;"><b>Leave details</b></a>
+
+
+
+            </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+

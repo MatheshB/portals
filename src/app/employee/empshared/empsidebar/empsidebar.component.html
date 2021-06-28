@@ -1,0 +1,87 @@
+
+<mat-nav-list >
+  <div class="profile-card">
+      <div class="header">
+          <!--h2>Soufiane FADIL</h2>
+          <h4>example@email.com</h4-->
+      </div>
+      <img class="image" src="/assets/empprofile.png" alt="Soufiane FADIL">
+  </div>
+  <mat-divider></mat-divider>
+  <div style="background-color:#F9A826;">
+    <mat-accordion >
+      <mat-expansion-panel style="color: white;">
+        <mat-expansion-panel-header style="background-color: #F9A826;">
+        <mat-panel-title >
+          <h1 style="color: white; font-family: Times New Roman, serif;  " ><mat-icon>contacts</mat-icon>Profile</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/empdashboard"><mat-icon>dashboard</mat-icon>Dashboard</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/empprofile"><mat-icon>account_box</mat-icon>My Profile</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/empupdprofile"><mat-icon>update</mat-icon>Update Profile</a>
+
+       </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </div>
+  <mat-divider></mat-divider>
+  <br>
+
+
+
+  <div >
+    <mat-accordion >
+      <mat-expansion-panel  >
+        <mat-expansion-panel-header style="background-color: #F9A826;">
+        <mat-panel-title >
+          <h1 style=" color: white; font-family: Times New Roman, serif;" > <mat-icon>assessment</mat-icon>Human resource</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/empleave-req"><mat-icon>assessment</mat-icon>Leave request</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/empleave-det"><mat-icon>flight_takeoff</mat-icon>Leave details</a>
+       </mat-expansion-panel>
+
+    </mat-accordion>
+  </div>
+  <mat-divider></mat-divider>
+  <br>
+  <div style="background-color: #F9A826;">
+    <mat-accordion >
+      <mat-expansion-panel  >
+        <mat-expansion-panel-header style="background-color: #F9A826;">
+        <mat-panel-title >
+          <h1 style=" color: white; font-family: Times New Roman, serif;" ><mat-icon> monetization_on</mat-icon>Finance</h1>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/emp-payslip-det"><mat-icon> monetization_on</mat-icon>Payslip details</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/emppayrep"><mat-icon>credit_card</mat-icon>Payslip report</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/empsettle"><mat-icon>query_builder</mat-icon>Final Settlement</a>
+       </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </div>
+  <mat-divider></mat-divider>
+  <br>
+
+
+
+
+  <h2 matSubheader>Tools</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+      <mat-icon>import_contacts</mat-icon>
+      Contacts
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+      <mat-icon>contact_phone</mat-icon>
+      Leads
+  </a>
+
+</mat-nav-list>
+

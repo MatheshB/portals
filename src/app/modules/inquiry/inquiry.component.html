@@ -1,0 +1,75 @@
+
+<div class="main-content" >
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; "  >Inquiry</h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(sales and distribution)</h4>
+                  </div>
+                  <div class="card-body" >
+                      <div class="table-responsive">
+                          <table class="styled-table" >
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 12px; " >
+                                <!-- <th>OPERATION</th> -->
+                                <th>ITEM_NUMBER</th>
+                                <th>DOC_NUMBER</th>
+                                <th>MATERIAL</th>
+                                <th>SHORT_TEXT</th>
+                                <th>ITEM_CATEG</th>
+                                <th>TARGET_QU</th>
+                                <th>DIVISION</th>
+
+                                <th>CURRENCY</th>
+                                <th>MAX_PL_DLV</th>
+                                <th>NET_VALUE</th>
+                                <th>UNIT_OF_WT</th>
+                                <th>SALES_QTY1</th>
+                                <th>GROSS_WEIG</th>
+                                <th>NET_WEIGHT</th>
+                                <th>REQ_QTY</th>
+                                <th>DATE_ST</th>
+                                <th>CREAT_DATE</th>
+                                 <th>CREATED_BY</th>
+                                <th>NET_PRICE</th>
+                                <!-- <th>PROFIT_SEG</th> -->
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of display | paginate: { itemsPerPage: 8, currentPage: p }">
+                                <!-- <td data-label="OPERATION">{{iter.OPERATION._text}}</td> -->
+                                <td data-label="ITEM_NUMBER">{{iter.ITM_NUMBER._text}}</td>
+                                <td data-label="DOC_NUMBER">{{iter.DOC_NUMBER._text}}</td>
+                                <td data-label="MATERIAL">{{iter.MATERIAL._text}}</td>
+                                <td data-label="SHORT_TEXT">{{iter.SHORT_TEXT._text}}</td>
+                                <td data-label="ITEM_CATEG">{{iter.ITEM_CATEG._text}}</td>
+                                <td data-label="TARGET_QU">{{iter.TARGET_QU._text}}</td>
+                                <td data-label="DIVISION">{{iter.DIVISION._text}}</td>
+
+                                <td data-label="CURRENCY">{{iter.CURRENCY._text}}</td>
+                                <td data-label="MAX_PL_DLV">{{iter.MAX_PL_DLV._text}}</td>
+                                <td data-label="NET_VALUE">{{iter.NET_VALUE._text}}</td>
+                                <td data-label="UNIT_OF_WT">{{iter.UNIT_OF_WT._text}}</td>
+                                <td data-label="SALES_QTY1">{{iter.SALES_QTY1._text}}</td>
+                                <td data-label="GROSS_WEIG">{{iter.GROSS_WEIG._text}}</td>
+                                <td data-label="NET_WEIGHT">{{iter.NET_WEIGHT._text}}</td>
+                                <td data-label="REQ_QTY">{{iter.REQ_QTY._text}}</td>
+                                <td data-label="DATE_ST">{{iter.DATE_ST._text}}</td>
+                                <td data-label="CREAT_DATE">{{iter.CREAT_DATE._text}}</td>
+                                <td data-label="CREATED_BY">{{iter.CREATED_BY._text}}</td>
+                                <td data-label="NET_PRICE">{{iter.NET_PRICE._text}}</td>
+                                <!-- <td data-label="PROFIT_SEG">{{iter.PROFIT_SEG._text}}</td> -->
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>

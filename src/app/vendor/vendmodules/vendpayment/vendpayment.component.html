@@ -1,0 +1,172 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                    <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px;" >Payment close </h1>
+                    <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">Finance</h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="styled-table">
+                              <thead  class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 20px; ">
+                                <th>VENDOR</th>
+                                <th>COMP_CODE</th>
+                                <th>CLEAR_DATE</th>
+                                <th>CLR_DOC_NO</th>
+                                <th>FISC_YEAR</th>
+                                <th>DOC_NO</th>
+                                <th>ITEM_NUM</th>
+                                <th>PSTNG_DATE</th>
+                                <th>DOC_DATE</th>
+                                <th>ENTRY_DATE</th>
+                                <th>CURRENCY</th>
+                                <th>LOC_CURRCY</th>
+                                <th>T_CURRENCY</th>
+                                <th>AMOUNT</th>
+                                <th>NET_AMOUNT</th>
+                                <th>DOC_TYPE</th>
+                                <th>FIS_PERIOD</th>
+                                <th>POST_KEY</th>
+                                <th>DB_CR_IND</th>
+                                <th>LC_AMOUNT</th>
+                                <th>AMT_DOCCUR</th>
+                                <th>BLINE_DATE</th>
+                                <th>OBJ_TYPE</th>
+                                <!-- <th>PSWSL</th> -->
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of head | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="VENDOR">{{iter.VENDOR._text}}</td>
+                                <td data-label="COMP_CODE">{{iter.COMP_CODE._text}}</td>
+                                <td data-label="CLEAR_DATE">{{iter.CLEAR_DATE._text}}</td>
+                                <td data-label="CLR_DOC_NO">{{iter.CLR_DOC_NO._text}}</td>
+                                <td data-label="FISC_YEAR">{{iter.FISC_YEAR._text}}</td>
+                                <td data-label="DOC_NO">{{iter.DOC_NO._text}}</td>
+                                <td data-label="ITEM_NUM">{{iter.ITEM_NUM._text}}</td>
+                                <td data-label="PSTNG_DATE">{{iter.PSTNG_DATE._text}}</td>
+                                <td data-label="DOC_DATE">{{iter.DOC_DATE._text}}</td>
+                                <td data-label="ENTRY_DATE">{{iter.ENTRY_DATE._text}}</td>
+                                <td data-label="CURRENCY">{{iter.CURRENCY._text}}</td>
+                                <td data-label="LOC_CURRCY">{{iter.LOC_CURRCY._text}}</td>
+                                <td data-label="T_CURRENCY">{{iter.T_CURRENCY._text}}</td>
+                                <td data-label="AMOUNT">{{iter.AMOUNT._text}}</td>
+                                <td data-label="NET_AMOUNT">{{iter.NET_AMOUNT._text}}</td>
+                                <td data-label="DOC_TYPE">{{iter.DOC_TYPE._text}}</td>
+                                <td data-label="FIS_PERIOD">{{iter.FIS_PERIOD._text}}</td>
+                                <td data-label="POST_KEY">{{iter.POST_KEY._text}}</td>
+                                <td data-label="DB_CR_IND">{{iter.DB_CR_IND._text}}</td>
+                                <td data-label="LC_AMOUNT">{{iter.LC_AMOUNT._text}}</td>
+                                <td data-label="AMT_DOCCUR">{{iter.AMT_DOCCUR._text}}</td>
+                                <td data-label="BLINE_DATE">{{iter.BLINE_DATE._text}}</td>
+                                <td data-label="OBJ_TYPE">{{iter.OBJ_TYPE._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<br>
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px;" > Payment open </h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(Finance)</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="styled-table">
+                            <thead  class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 20px; ">
+                              <th>VENDOR</th>
+                              <th>COMP_CODE</th>
+                              <th>CLEAR_DATE</th>
+                              <th>CLR_DOC_NO</th>
+                              <th>FISC_YEAR</th>
+                              <th>DOC_NO</th>
+                              <th>ITEM_NUM</th>
+                              <th>PSTNG_DATE</th>
+                              <th>DOC_DATE</th>
+                              <th>ENTRY_DATE</th>
+                              <th>CURRENCY</th>
+                              <th>LOC_CURRCY</th>
+                              <th>T_CURRENCY</th>
+                              <th>AMOUNT</th>
+                              <th>NET_AMOUNT</th>
+                              <th>DOC_TYPE</th>
+                              <th>FIS_PERIOD</th>
+                              <th>POST_KEY</th>
+                              <th>DB_CR_IND</th>
+                              <th>LC_AMOUNT</th>
+                              <th>AMT_DOCCUR</th>
+                              <th>BLINE_DATE</th>
+                              <th>OBJ_TYPE</th>
+                             <th> INV_REF </th>
+                             <th> INV_YEAR </th>
+                             <th>INV_ITEM </th>
+                             <th> NXT_DOCTYP </th>
+                             <th> REF_DOC </th>
+                             <th>REF_ORG_UN  </th>
+
+                            </thead>
+                            <tbody>
+                              <tr *ngFor = "let iter of values | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <td data-label="VENDOR">{{iter.VENDOR._text}}</td>
+                                <td data-label="COMP_CODE">{{iter.COMP_CODE._text}}</td>
+                                <td data-label="CLEAR_DATE">{{iter.CLEAR_DATE._text}}</td>
+                                <td data-label="CLR_DOC_NO">{{iter.CLR_DOC_NO._text}}</td>
+                                <td data-label="FISC_YEAR">{{iter.FISC_YEAR._text}}</td>
+                                <td data-label="DOC_NO">{{iter.DOC_NO._text}}</td>
+                                <td data-label="ITEM_NUM">{{iter.ITEM_NUM._text}}</td>
+                                <td data-label="PSTNG_DATE">{{iter.PSTNG_DATE._text}}</td>
+                                <td data-label="DOC_DATE">{{iter.DOC_DATE._text}}</td>
+                                <td data-label="ENTRY_DATE">{{iter.ENTRY_DATE._text}}</td>
+                                <td data-label="CURRENCY">{{iter.CURRENCY._text}}</td>
+                                <td data-label="LOC_CURRCY">{{iter.LOC_CURRCY._text}}</td>
+                                <td data-label="T_CURRENCY">{{iter.T_CURRENCY._text}}</td>
+                                <td data-label="AMOUNT">{{iter.AMOUNT._text}}</td>
+                                <td data-label="NET_AMOUNT">{{iter.NET_AMOUNT._text}}</td>
+                                <td data-label="DOC_TYPE">{{iter.DOC_TYPE._text}}</td>
+                                <td data-label="FIS_PERIOD">{{iter.FIS_PERIOD._text}}</td>
+                                <td data-label="POST_KEY">{{iter.POST_KEY._text}}</td>
+                                <td data-label="DB_CR_IND">{{iter.DB_CR_IND._text}}</td>
+                                <td data-label="LC_AMOUNT">{{iter.LC_AMOUNT._text}}</td>
+                                <td data-label="AMT_DOCCUR">{{iter.AMT_DOCCUR._text}}</td>
+                                <td data-label="BLINE_DATE">{{iter.BLINE_DATE._text}}</td>
+                                <td data-label="OBJ_TYPE">{{iter.OBJ_TYPE._text}}</td>
+                                <td data-label="INV_REF">{{iter.INV_REF._text}}</td>
+                                <td data-label="INV_YEAR">{{iter.INV_YEAR._text}}</td>
+                                <td data-label="INV_ITEM">{{iter.INV_ITEM._text}}</td>
+                                <td data-label="NXT_DOCTYP">{{iter.NXT_DOCTYP._text}}</td>
+                                <td data-label="REF_DOC">{{iter.REF_DOC._text}}</td>
+                                <td data-label="REF_ORG_UN">{{iter.REF_ORG_UN._text}}</td>
+
+
+                              </tr>
+                              </tbody>
+                        </table>
+                        <div class="paginate text-center">
+                          <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+

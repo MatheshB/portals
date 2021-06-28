@@ -1,0 +1,16 @@
+<app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+<script
+src="https://cdn.cai.tools.sap/webchat/webchat.js"
+channelId="7b68d34b-f303-4f9b-8ba6-9e283f5de81a"
+token="e88ff3fa053cb9e2d07f0e2d570fe4ee"
+id="cai-webchat">
+</script>
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+

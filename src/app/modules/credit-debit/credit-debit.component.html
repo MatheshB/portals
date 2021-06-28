@@ -1,0 +1,92 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; " >Credit</h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(Finance)</h4>
+                  </div>
+                  <div class="card-body" style="margin-left: 15%;">
+                      <div class="table-responsive">
+                        <table class="styled-table" >
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 20px; ">
+                                <th>Fiscal year</th>
+                                <th>Clearing date</th>
+                                <th>Document no of Clearing doc</th>
+                                <th>Amount to update in GL</th>
+                                <th>Amount type</th>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of display | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="Fiscal year">{{iter.GJAHR._text}}</td>
+                                <td data-label="Clearing date">{{iter.AUGDT._text}}</td>
+                                <td data-label="Document no of Clearing doc">{{iter.AUGBL._text}}</td>
+                                <td data-label="Amount to update in GL">{{iter.PSWBT._text}}</td>
+                                <td data-label="Amount type">{{iter.PSWSL._text}}</td>
+
+                                <!-- <td data-label="SD Document Currency">{{iter.CURRENCY._text}}</td>
+                                <td data-label="Creation Date">{{iter.CREATION_DATE._text}}</td>
+                                <td data-label="Creation Time">{{iter.CREATION_TIME._text}}</td> -->
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<br>
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; " >Debit</h1>
+                      <h4  class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(Finance)</h4>
+                  </div>
+                  <div class="card-body" style="margin-left: 15%;">
+                      <div class="table-responsive">
+                        <table class="styled-table" >
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 20px; ">
+                                <th>Fiscal year</th>
+                                <th>Clearing date</th>
+                                <th>Document no of Clearing doc</th>
+                                <th>Amount to update in GL</th>
+                                <th>Amount type</th>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of debit | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="Fiscal year">{{iter.GJAHR._text}}</td>
+                                <td data-label="Clearing date">{{iter.AUGDT._text}}</td>
+                                <td data-label="Document no of Clearing doc">{{iter.AUGBL._text}}</td>
+                                <td data-label="Amount to update in GL">{{iter.PSWBT._text}}</td>
+                                <td data-label="Amount type">{{iter.PSWSL._text}}</td>
+
+                                <!-- <td data-label="SD Document Currency">{{iter.CURRENCY._text}}</td>
+                                <td data-label="Creation Date">{{iter.CREATION_DATE._text}}</td>
+                                <td data-label="Creation Time">{{iter.CREATION_TIME._text}}</td> -->
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>

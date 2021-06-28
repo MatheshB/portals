@@ -1,0 +1,152 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                    <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"  >Request for Quotation head </h1>
+                    <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(Material Management)</h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="styled-table">
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 12px; ">
+                                <th>VENDOR</th>
+                                <th>VEND_NAME</th>
+                                <th>DOC_NUMBER</th>
+                                <th>CO_CODE</th>
+                                <th>DOC_CAT</th>
+                                <th>DOC_TYPE</th>
+                                <th>STATUS</th>
+                                <th>CREATED_ON</th>
+                                <th>CREATED_BY</th>
+                                <th>ITEM_INTVL</th>
+                                <th>LAST_ITEM</th>
+                                <th>LANGUAGE</th>
+                                <th>PURCH_ORG</th>
+                                <th>PURCH_GROUP</th>
+                                <th>CURRENCY</th>
+                                <th>CURRENCY_ISO</th>
+                                <th>UPDATE_GRP</th>
+                                <!-- <th>PSWSL</th> -->
+                              </thead>
+                              <tbody>
+                                <tr *ngFor = "let iter of head  | paginate: { itemsPerPage: 4, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="VENDOR">{{iter.VENDOR._text}}</td>
+                                <td data-label="VEND_NAME">{{iter.VEND_NAME._text}}</td>
+                                <td data-label="DOC_NUMBER">{{iter.DOC_NUMBER._text}}</td>
+                                <td data-label="CO_CODE">{{iter.CO_CODE._text}}</td>
+                                <td data-label="DOC_CAT">{{iter.DOC_CAT._text}}</td>
+                                <td data-label="DOC_TYPE">{{iter.DOC_TYPE._text}}</td>
+                                <td data-label="STATUS">{{iter.STATUS._text}}</td>
+                                <td data-label="CREATED_ON">{{iter.CREATED_ON._text}}</td>
+                                <td data-label="CREATED_BY">{{iter.CREATED_BY._text}}</td>
+                                <td data-label="ITEM_INTVL">{{iter.ITEM_INTVL._text}}</td>
+                                <td data-label="LAST_ITEM">{{iter.LAST_ITEM._text}}</td>
+                                <td data-label="VENDOR">{{iter.VENDOR._text}}</td>
+                                <td data-label="LANGUAGE">{{iter.LANGUAGE._text}}</td>
+                                <td data-label="PURCH_ORG">{{iter.PURCH_ORG._text}}</td>
+                                <td data-label="PUR_GROUP">{{iter.PUR_GROUP._text}}</td>
+                                <td data-label="CURRENCY">{{iter.CURRENCY._text}}</td>
+                                <td data-label="CURRENCY_ISO">{{iter.CURRENCY_ISO._text}}</td>
+                                <td data-label="UPDATE_GRP">{{iter.UPDATE_GRP._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<br>
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px;"  >Request for Quotation values </h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;"> Material Management</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="styled-table">
+                            <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 12px; ">
+
+                              <th>DOC_NUMBER</th>
+                              <th>DOC_ITEM</th>
+                              <th>STATUS</th>
+                              <th>CHANGED_ON</th>
+                              <th>SHORT_TEXT</th>
+                              <th>MATERIAL</th>
+                              <th>PUR_MAT</th>
+                              <th>CO_CODE</th>
+                              <th>PLANT</th>
+                              <th>STORE_LOC</th>
+                              <th>MAT_GRP</th>
+                              <th>TARGET_QTY</th>
+                              <th>QUANTITY</th>
+                              <th>UNIT</th>
+                              <th>NET_PRICE</th>
+                              <th>GROS_VALUE</th>
+                              <th>QUOT_DEAD</th>
+                              <th>PRICE_DATE</th>
+                              <th>RFQ_ITEM</th>
+                              <th>PCKG_NO</th>
+                              <th>UPDATE_GRP</th>
+                              <th>MAT_TYPE</th>
+
+                              <!-- <th>PSWSL</th> -->
+                            </thead>
+                            <tbody>
+                              <tr *ngFor = "let iter of values  | paginate: { itemsPerPage: 4, currentPage: p }">
+                              <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+
+                              <td data-label="DOC_NUMBER">{{iter.DOC_NUMBER._text}}</td>
+                              <td data-label="DOC_ITEM">{{iter.DOC_ITEM._text}}</td>
+
+                              <td data-label="STATUS">{{iter.STATUS._text}}</td>
+                              <td data-label="CHANGED_ON">{{iter.CHANGED_ON._text}}</td>
+                              <td data-label="SHORT_TEXT">{{iter.SHORT_TEXT._text}}</td>
+                              <td data-label="MATERIAL">{{iter.MATERIAL._text}}</td>
+                              <td data-label="PUR_MAT">{{iter.PUR_MAT._text}}</td>
+                              <td data-label="CO_CODE">{{iter.CO_CODE._text}}</td>
+                              <td data-label="PLANT">{{iter.PLANT._text}}</td>
+                              <td data-label="STORE_LOC">{{iter.STORE_LOC._text}}</td>
+                              <td data-label="MAT_GRP">{{iter.MAT_GRP._text}}</td>
+                              <td data-label="TARGET_QTY">{{iter.TARGET_QTY._text}}</td>
+                              <td data-label="QUANTITY">{{iter.QUANTITY._text}}</td>
+                              <td data-label="UNIT">{{iter.UNIT._text}}</td>
+                              <td data-label="NET_PRICE">{{iter.NET_PRICE._text}}</td>
+                              <td data-label="GROS_VALUE">{{iter.GROS_VALUE._text}}</td>
+                              <td data-label="QUOT_DEAD">{{iter.QUOT_DEAD._text}}</td>
+                              <td data-label="PRICE_DATE">{{iter.PRICE_DATE._text}}</td>
+                              <td data-label="RFQ_ITEM">{{iter.RFQ_ITEM._text}}</td>
+                              <td data-label="PCKG_NO">{{iter.PCKG_NO._text}}</td>
+                              <td data-label="UPDATE_GRP">{{iter.UPDATE_GRP._text}}</td>
+                              <td data-label="MAT_TYPE">{{iter.MAT_TYPE._text}}</td>
+
+
+                              </tr>
+                              </tbody>
+                        </table>
+                        <div class="paginate text-center">
+                          <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+

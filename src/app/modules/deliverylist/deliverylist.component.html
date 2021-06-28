@@ -1,0 +1,123 @@
+<!--
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                      <h1 class="card-title font-weight-bold " >Delivery List </h1>
+                      <h4 class="card-category"> sales and distribution</h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                <th>KUNNR</th>
+                                <th>kUNAG</th>
+                                <th>VBELN</th>
+                                <th>ERZET</th>
+                                <th>ERDAT</th>
+                                <th>VKORG</th>
+                                <th>LFART</th>
+
+                                <th>INCO2</th>
+                                <th>LFUHR</th>
+                                <th>MATNR</th>
+                                <th>POSNR</th>
+                                <th>ARKTX</th>
+                              </thead>
+                              <tbody>
+
+                                <tr *ngFor = "let iter of display  | paginate: { itemsPerPage: 8, currentPage: p }">
+
+                                <td data-label="KUNNR">{{iter.KUNNR._text}}</td>
+                                <td data-label="KUNAG">{{iter.KUNAG._text}}</td>
+                                <td data-label="VBELN">{{iter.VBELN._text}}</td>
+                                <td data-label="ERZET">{{iter.ERZET._text}}</td>
+                                <td data-label="ERDAT">{{iter.ERDAT._text}}</td>
+                                <td data-label="VKORG">{{iter.VKORG._text}}</td>
+                                <td data-label="LFART">{{iter.LFART._text}}</td>
+
+                                <td data-label="INCO2">{{iter.INCO2._text}}</td>
+                                <td data-label="LFUHR">{{iter.LFUHR._text}}</td>
+                                <td data-label="MATNR">{{+iter.MATNR._text}}</td>
+                                <td data-label="POSNR">{{iter.POSNR._text}}</td>
+                                <td data-label="ARKTX">{{iter.ARKTX._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate">
+                            <pagination-controls (pageChange)="p=$event"></pagination-controls>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div> -->
+
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger text-center">
+                    <h1  class="card-title font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 50px; ">Delivery List </h1>
+                      <h4 class="card-category" style="font-family:'Times New Roman', Times, serif;font-size: 25px;">(sales and distribution)</h4>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="styled-table" >
+                              <thead class=" font-weight-bold " style="font-family: 'Times New Roman', Times, serif; font-size: 14px; ">
+                                <th>Customer</th>
+                                <th>Customer(sold to party)</th>
+                                <th>Sales document</th>
+                                <th>Entry time</th>
+                                <th>Created on</th>
+                                <th>Sales organization</th>
+                                <th>Delivery type</th>
+                                <!-- <th>LFDAT</th> -->
+                                <th>Incoterm2</th>
+                                <th>Time of delivery</th>
+                                <th>Material</th>
+                                <th>Item no of SD doc</th>
+                                <th>Short description</th>
+                              </thead>
+                              <tbody>
+
+                                <tr *ngFor = "let iter of display | paginate: { itemsPerPage: 8, currentPage: p }">
+                                <!-- <td data-label="Sales and Distribution Doc No">{{iter.SD_DOC._text}}</td> -->
+                                <td data-label="Customer">{{iter.KUNNR._text}}</td>
+                                <td data-label="Customer(sold to party)">{{iter.KUNAG._text}}</td>
+                                <td data-label="Sales document">{{iter.VBELN._text}}</td>
+                                <td data-label="Entry time">{{iter.ERZET._text}}</td>
+                                <td data-label="Created on">{{iter.ERDAT._text}}</td>
+                                <td data-label="Sales organization">{{iter.VKORG._text}}</td>
+                                <td data-label="Delivery type">{{iter.LFART._text}}</td>
+                                <!-- <td data-label="LFDAT">{{iter.LFDAT.text}}</td> -->
+                                <td data-label="Incoterm2">{{iter.INCO2._text}}</td>
+                                <td data-label="Time of delivery">{{iter.LFUHR._text}}</td>
+                                <td data-label="Material">{{+iter.MATNR._text}}</td>
+                                <td data-label="Item no of SD doc">{{iter.POSNR._text}}</td>
+                                <td data-label="Short description">{{iter.ARKTX._text}}</td>
+
+                                </tr>
+                                </tbody>
+                          </table>
+                          <div class="paginate text-center">
+                            <pagination-controls (pageChange)= "p = $event"> </pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
